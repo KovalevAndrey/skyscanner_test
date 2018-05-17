@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="2dp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/outbound_leg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp">
+
+            <ImageView
+                android:id="@+id/outbound_icon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/ez_icon" />
+
+            <TextView
+                android:id="@+id/outbound_flight_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/outbound_icon"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                tools:text="15:35 - 17:00" />
+
+            <TextView
+                android:id="@+id/outbound_carrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/outbound_flight_time"
+                android:layout_toEndOf="@+id/outbound_icon"
+                android:textColor="@color/colorGray"
+                android:textSize="14sp"
+                tools:text="EDI - LHR, RyanAir" />
+
+            <TextView
+                android:id="@+id/outbound_flight_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                tools:text="Direct" />
+
+
+            <TextView
+                android:id="@+id/outbound_flight_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/outbound_flight_type"
+                android:textColor="@color/colorGray"
+                android:textSize="14sp"
+                tools:text="2h 25m" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/inbound_leg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp">
+
+
+            <ImageView
+                android:id="@+id/inbound_icon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/ez_icon" />
+
+            <TextView
+                android:id="@+id/inbound_flight_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/inbound_icon"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                tools:text="15:35 - 17:00" />
+
+            <TextView
+                android:id="@+id/inbound_carrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inbound_flight_time"
+                android:layout_toEndOf="@+id/inbound_icon"
+                android:textColor="@color/colorGray"
+                android:textSize="14sp"
+                tools:text="EDI - LHR, RyanAir" />
+
+            <TextView
+                android:id="@+id/inbound_flight_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                tools:text="Direct" />
+
+
+            <TextView
+                android:id="@+id/inbound_flight_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@+id/inbound_flight_type"
+                android:textColor="@color/colorGray"
+                android:textSize="14sp"
+                tools:text="2h 25m" />
+        </RelativeLayout>
+
+        <View
+            android:background="@color/colorGray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <RelativeLayout
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"
+                tools:text="45$" />
+
+
+            <TextView
+                android:id="@+id/agent"
+                android:layout_below="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/colorGray"
+                android:textSize="14sp"
+                tools:text="via RyanAir.com" />
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
